@@ -7,7 +7,7 @@ cask "genmonbar" do
   desc "Menu bar widgets that show an emoji and the output of a shell command"
   homepage "https://github.com/DennisFaucher/GenMonBar"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "GenMonBar.app"
 
