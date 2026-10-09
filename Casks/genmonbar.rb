@@ -11,6 +11,8 @@ cask "genmonbar" do
 
   app "GenMonBar.app"
 
+  zap trash: "~/Library/Application Support/GenMonBar"
+
   caveats <<~EOS
     GenMonBar is not signed with an Apple Developer ID, so macOS Gatekeeper
     will block it on first launch. To allow it, either right-click
@@ -22,8 +24,4 @@ cask "genmonbar" do
 
       brew reinstall --cask --no-quarantine genmonbar
   EOS
-
-  zap trash: [
-    "~/Library/Application Support/GenMonBar",
-  ]
 end
